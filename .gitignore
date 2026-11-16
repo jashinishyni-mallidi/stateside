@@ -1,0 +1,44 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Large government datasets (download via scripts, don't commit)
+data/raw/
+data/processed/
+*.xlsx
+*.csv.gz
+
+# User uploads & generated resumes (personal data)
+uploads/
+generated/
+*.pdf
+*.docx
+!docs/**/*.pdf
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker volumes
+pgdata/
